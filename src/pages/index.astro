@@ -55,3 +55,16 @@ import LogoCutted from "@/assets/logo-cutted.svg";
     </footer>
   </div>
 </Layout>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      scrub: 1,
+    },
+  });
+</script>
